@@ -1,2 +1,2 @@
 # CV
-This is my personal CV (ENG): https://github.com/Alejaldo/cv
+This is my personal CV (ENG): https://alejaldo.github.io/cv/

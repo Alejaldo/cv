@@ -1,0 +1,15 @@
+{
+  "name": "cv-pdf-generator",
+  "version": "1.0.0",
+  "description": "PDF generator for CV",
+  "main": "generate-pdf.js",
+  "scripts": {
+    "generate-pdf": "node generate-pdf.js"
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.0"
+  },
+  "keywords": ["pdf", "cv", "resume"],
+  "author": "Aleksandr Kuznetsov",
+  "license": "MIT"
+}

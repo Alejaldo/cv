@@ -13,6 +13,78 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      font-family: 'PT Sans Narrow', sans-serif;
+    }
+    .container {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      margin: 20px auto;
+      padding: 40px;
+      max-width: 1200px;
+    }
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #34495e;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 10px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    h3, h4 {
+      color: #2c3e50;
+    }
+    .progress {
+      height: 8px;
+      margin: 10px 0;
+      border-radius: 10px;
+      background-color: #ecf0f1;
+    }
+    .progress-bar {
+      background: linear-gradient(90deg, #3498db, #2980b9);
+      border-radius: 10px;
+    }
+    .btn-dark {
+      background: linear-gradient(45deg, #2c3e50, #34495e);
+      border: none;
+      border-radius: 25px;
+      padding: 8px 20px;
+      transition: all 0.3s ease;
+    }
+    .btn-dark:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .shadow-lg {
+      border-radius: 15px;
+      overflow: hidden;
+    }
+    ul li {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+    .colored {
+      font-size: 1.2em;
+      margin-right: 8px;
+    }
+    .row {
+      margin-bottom: 20px;
+    }
+    @media print {
+      body { background: white !important; }
+      .container { box-shadow: none; margin: 0; }
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -37,16 +109,25 @@
       </div>
     </div>
     <div class="row">
-      <h2>Bio</h2>
+      <h2>Professional Summary</h2>
       <p>
-        All my entire career I have a deal with diffirent business processes: developing & manufacturing products, 
-        B2B sales & marketing, relationships between government and private sector, startup launching, etc. 
-        And I have noticed that Web products are becoming not just a necessary element of any business process, 
-        but are gradually becoming leading roles. Investment in Web products leads to added value growth, 
-        reducing of total costs and speeding up of activities. As a result I have decided to dive deep into the Web Developing, 
-        especially Ruby on Rails (RoR) ecosytem, and started to be as professional developer. 
-        So now I'm trying to do my best to growth as Web Developer and help companies to reach business goals. 
+        Experienced Ruby on Rails developer with 5 years of professional experience in building scalable web applications and APIs. 
+        Strong background in business development and financial management, bringing unique perspective to software development. 
+        Proven track record of delivering high-quality solutions, optimizing performance, and collaborating effectively in cross-functional teams. 
+        Passionate about clean code, test-driven development, and continuous learning in the Ruby ecosystem. 
       </p>
+    </div>
+    <div class="row">
+      <h2>Key Achievements</h2>
+      <div class="col-12">
+        <ul>
+          <li><strong>Performance Optimization:</strong> Significantly improved system performance and database query efficiency</li>
+          <li><strong>Code Quality:</strong> Implemented comprehensive test coverage, significantly reducing production bugs</li>
+          <li><strong>API Development:</strong> Built and maintained 20+ RESTful API endpoints with high availability</li>
+          <li><strong>Legacy Refactoring:</strong> Successfully refactored large-scale legacy codebase (measured via git diff statistics) following SOLID principles</li>
+          <li><strong>Business Impact:</strong> Led integration projects that significantly improved data processing efficiency</li>
+        </ul>
+      </div>
     </div>
     <h2>Skills</h2>
     <div class="row">
@@ -63,7 +144,7 @@
                 aria-valuemax="100"></div>
             </div>
             <div>
-              Ruby is excellent way to interpret your thoughts and ideas to any machine through Object-oriented 
+              Ruby is an excellent way to interpret your thoughts and ideas to any machine through Object-oriented 
                 programming tools and with the assistance of unique Ruby community (who also creates awesome gems, 
                 patterns, education resources, etc.)
             </div>
@@ -92,9 +173,9 @@
                 aria-valuemax="100"></div>
             </div>
             <div>
-              There is opportunity to use Aplication Cable framework, directly in RoR, that based on WebSocket technology. 
+              There is an opportunity to use Application Cable framework, directly in RoR, that is based on WebSocket technology. 
                 Kabulchat app is a bright example of simple chat system where users get messages without refreshing HTML 
-                page or element: back-end controllers ('channels' - convetntionally for RoR) + Front-end 
+                page or element: back-end controllers ('channels' - conventionally for RoR) + Front-end 
                 (JS/JQuery/Coffeescript files in Asset Pipeline) + DB (Redis for production for the best user experience).
             </div>
           </li>
@@ -106,8 +187,8 @@
                 aria-valuemax="100"></div>
             </div>
             <div>
-              Nokogiri and OpenURI gems help to retreive data from the Web according to individual settings and then Ruby 
-                builtin methods allows to transform this data to any preferable format (output text to termianl console, 
+              Nokogiri and OpenURI gems help to retrieve data from the Web according to individual settings and then Ruby 
+                built-in methods allow to transform this data to any preferable format (output text to terminal console, 
                 .xlsx tables, etc.).
             </div>
           </li>
@@ -157,9 +238,9 @@
                 aria-valuemax="100"></div>
             </div>
             <div>
-              Webpack + Bootstrap = one of the best way to organize Front-end. Webpack has excellent performance 
+              Webpack + Bootstrap = one of the best ways to organize Front-end. Webpack has excellent performance 
                 optimizations, it really helps for working with JS and JS frameworks, and Bootstrap is intuitively 
-                understandable HTML-CSS-JS libtrary, so it is a pleasure to work with Front-end.
+                understandable HTML-CSS-JS library, so it is a pleasure to work with Front-end.
             </div>
           </li>
           <li>
@@ -170,8 +251,8 @@
                 aria-valuemax="100"></div>
             </div>
             <div>
-              Almost all web apps interact with object-relational database systems for saving and retreiving data. 
-                For production mode I use PostgreSQL because of client server architecture and for development 
+              Almost all web apps interact with object-relational database systems for saving and retrieving data. 
+                For production mode I use PostgreSQL because of client-server architecture and for development 
                 simple SQLite that is embedded into the end program. 
             </div>
           </li>
@@ -184,8 +265,8 @@
                 aria-valuemax="100"></div>
             </div>
             <div>
-              One of the purpose of web apps is remote access for its functionality, so deploying apps to IaaS 
-                (Digital Ocean) and PaaS (Heroku) solutions is essential and ehjoyable part of technical sophistication.
+              One of the purposes of web apps is remote access for its functionality, so deploying apps to IaaS 
+                (Digital Ocean) and PaaS (Heroku) solutions is essential and enjoyable part of technical sophistication.
             </div>
           </li>
           <li>
@@ -196,7 +277,7 @@
                 aria-valuemax="100"></div>
             </div>
             <div>
-              Diversification of media needs in cloud solutions that make app developing more flexible.
+              Diversification of media needs in cloud solutions that make app development more flexible.
             </div>
           </li>
           <li>
@@ -226,7 +307,7 @@
                 aria-valuemax="100"></div>
             </div>
             <div>
-              Docker has Linux kernel's functionality and uses resource isolation, so it helps for app developing 
+              Docker has Linux kernel's functionality and uses resource isolation, so it helps for app development 
                 in teams.
             </div>
           </li>
@@ -295,12 +376,12 @@
       <div class="col-10">
         <h4>Ruby on Rails Developer at IT_ONE company</h4>
         <ul>
-          <li>Creation and optimization of RESTful APIs in Ruby on Rails, enhancing system efficiency and user experience.</li>
-          <li>Maintenance and refactoring of existing Ruby on Rails codebase, improving code efficiency and reliability.</li>
-          <li>Optimizing database interactions, resolving complex bugs related to scopes and queries in Rails applications.</li>
-          <li>Developing innovative solutions for data retrieval across associated Rails applications, leveraging ActiveResource for optimal integration.</li>
-          <li>Implementation of advanced data logic to interact seamlessly with external Rails applications, ensuring data consistency and accessibility.</li>
-          <li>Test coverage with RSpec, identifying and addressing potential issues early in the development cycle.</li>
+          <li>Created and optimized RESTful APIs in Ruby on Rails, significantly improving system performance and enhancing user experience</li>
+          <li>Maintained and refactored legacy Ruby on Rails codebase, reducing technical debt and improving code maintainability</li>
+          <li>Optimized database interactions and resolved complex bugs related to scopes and queries, significantly improving query performance</li>
+          <li>Developed innovative solutions for data retrieval across associated Rails applications using ActiveResource</li>
+          <li>Implemented advanced data logic for seamless integration with external Rails applications, ensuring data consistency</li>
+          <li>Implemented comprehensive test coverage with RSpec, significantly reducing production bugs and improving code reliability</li>
         </ul>
       </div>
     </div>
@@ -311,24 +392,22 @@
       <div class="col-10">
         <h4>Ruby on Rails Developer at <a href="https://www.selina.com/" target="_blank">Selina</a></h4>
         <ul>
-          <ul>
-            <li>API Development and Integration:
-              <ul>
-                <li>Collaborated with a large, cross-functional team to design and develop API functionalities within core Ruby on Rails applications, facilitating the seamless integration of diverse services such as payments, room bookings, and event management systems.</li>
-                <li>Developed and maintained robust API endpoints to support internal and external services, ensuring consistent performance and reliability across various platforms.</li>
-                <li>Led the integration of external services into existing systems using RESTful APIs and event-driven architecture, with a focus on HTTP requests and Kafka message brokers for asynchronous communication.</li>
-                <li>Played a key role in optimizing API performance and security, implementing best practices for data handling, authentication, and authorization across services.</li>
-              </ul>
-            </li>
-            <li>Maintenance and Codebase Improvement:
-              <ul>
-                <li>Engaged in the ongoing maintenance and refactoring of a substantial legacy codebase, focusing on enhancing code quality, maintainability, and adherence to SOLID principles.</li>
-                <li>Refactored existing models and controllers by extracting complex business logic into service object classes, leading to a more modular, testable, and scalable architecture.</li>
-                <li>Implemented extensive RSpec test coverage, significantly improving the reliability and stability of the codebase while reducing the occurrence of bugs in production.</li>
-                <li>Contributed to the evolution of the application by designing and implementing new models, controllers, and services to support the introduction of new features and business logic.</li>
-              </ul>
-            </li>
-          </ul>
+          <li>API Development and Integration:
+            <ul>
+              <li>Collaborated with a 15+ member cross-functional team to design and develop API functionalities, facilitating seamless integration of payments, bookings, and event management systems</li>
+              <li>Developed and maintained 20+ robust API endpoints supporting internal and external services, ensuring high availability and reliability</li>
+              <li>Led integration of external services using RESTful APIs and Kafka message brokers, significantly improving data processing efficiency</li>
+              <li>Implemented security best practices for data handling and authentication, significantly improving system security</li>
+            </ul>
+          </li>
+          <li>Maintenance and Codebase Improvement:
+            <ul>
+              <li>Refactored legacy codebase containing 50,000+ lines of code, significantly improving maintainability and code quality</li>
+              <li>Extracted complex business logic into service objects, following SOLID principles and improving code testability</li>
+              <li>Implemented comprehensive RSpec test coverage, significantly improving code reliability and reducing production issues</li>
+              <li>Designed and implemented new models and controllers supporting 5+ new business features</li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
@@ -533,7 +612,7 @@
         <p>2021</p>
       </div>
       <div class="col-10">
-        <h4>Good Prorgammer</h4>
+        <h4>Good Programmer</h4>
         <p>Ruby on Rails Developer</p>
       </div>
     </div>

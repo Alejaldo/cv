@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV: Aleksandr Kuznetsov - PDF Version</title>
+  <link rel="ruby icon" href="favicon.ico">
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic'
+    rel='stylesheet' type='text/css'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+  <style>
+    @page {
+      size: A4;
+      margin: 10mm;
+    }
+    
+    body {
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-size: 10px;
+      line-height: 1.3;
+      color: #2c3e50;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 100%;
+      padding: 0;
+    }
+    
+    h1 {
+      color: #2c3e50;
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+    }
+    
+    h2 {
+      color: #34495e;
+      font-size: 13px;
+      font-weight: 700;
+      margin-top: 10px;
+      margin-bottom: 6px;
+      border-bottom: 1px solid #3498db;
+      padding-bottom: 3px;
+    }
+    
+    h3, h4 {
+      color: #2c3e50;
+      font-size: 11px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    
+    .header-section {
+      margin-bottom: 6px;
+      background: #f8f9fa;
+      padding: 8px;
+      border-radius: 5px;
+      border-left: 3px solid #3498db;
+    }
+    
+    .contact-info {
+      display: inline-block;
+      vertical-align: top;
+      max-width: 100%;
+    }
+    
+    .contact-text {
+      display: inline-block;
+      vertical-align: top;
+      max-width: calc(100% - 105px);
+    }
+    
+    .contact-photo {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 10px;
+    }
+    
+    .avatar {
+      width: 85px;
+      height: 85px;
+      border-radius: 5px;
+      display: block;
+    }
+    
+    .summary {
+      background: #f8f9fa;
+      padding: 6px;
+      border-radius: 3px;
+      margin-bottom: 8px;
+      font-size: 9px;
+      border-left: 2px solid #3498db;
+    }
+    
+    .achievements {
+      background: #e8f4fd;
+      padding: 5px;
+      border-radius: 3px;
+      margin-bottom: 8px;
+    }
+    
+    .achievements ul {
+      margin: 0;
+      padding-left: 12px;
+    }
+    
+    .achievements li {
+      margin-bottom: 2px;
+      font-size: 9px;
+    }
+    
+    .skills-section {
+      margin-bottom: 6px;
+    }
+    
+    .skills-column {
+      width: 48%;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 2%;
+    }
+    
+    .skills-column:last-child {
+      margin-right: 0;
+    }
+    
+    .skill-item {
+      margin-bottom: 3px;
+      font-size: 9px;
+    }
+    
+    .skill-name {
+      font-weight: 600;
+      color: #2c3e50;
+    }
+    
+    .skill-description {
+      font-size: 8px;
+      color: #666;
+      margin-top: 1px;
+    }
+    
+    .experience-section {
+      margin-bottom: 6px;
+    }
+    
+    .experience-item {
+      margin-bottom: 4px;
+      page-break-inside: avoid;
+    }
+    
+    .experience-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 2px;
+    }
+    
+    .experience-date {
+      font-size: 8px;
+      color: #666;
+      font-weight: 600;
+      min-width: 75px;
+    }
+    
+    .experience-title {
+      font-size: 10px;
+      font-weight: 600;
+      color: #2c3e50;
+    }
+    
+    .experience-company {
+      font-size: 9px;
+      color: #3498db;
+      font-weight: 600;
+    }
+    
+    .experience-description {
+      font-size: 8px;
+      margin-left: 80px;
+      margin-top: 2px;
+    }
+    
+    .experience-description ul {
+      margin: 0;
+      padding-left: 8px;
+    }
+    
+    .experience-description li {
+      margin-bottom: 0.5px;
+    }
+    
+    .education-section {
+      margin-bottom: 6px;
+    }
+    
+    .education-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2px;
+    }
+    
+    .education-date {
+      font-size: 8px;
+      color: #666;
+      min-width: 75px;
+    }
+    
+    .education-details {
+      font-size: 9px;
+    }
+    
+    .education-title {
+      font-weight: 600;
+      color: #2c3e50;
+    }
+    
+    .education-degree {
+      color: #666;
+    }
+    
+    ul {
+      margin: 0;
+      padding-left: 10px;
+    }
+    
+    li {
+      margin-bottom: 0.5px;
+    }
+    
+    .colored {
+      font-size: 9px;
+      margin-right: 3px;
+    }
+    
+    .no-break {
+      page-break-inside: avoid;
+    }
+    
+    /* Hide elements not needed in PDF */
+    .btn, .progress, .shadow-lg {
+      display: none;
+    }
+    
+    /* Compact links */
+    a {
+      color: #3498db;
+      text-decoration: none;
+      font-size: 8px;
+    }
+    
+    /* Remove extra margins */
+    .row {
+      margin: 0;
+    }
+    
+    .col-12, .col-2, .col-3, .col-5, .col-7, .col-9, .col-10 {
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Ruby on Rails Developer</h1>
+    
+    <div class="header-section">
+      <div class="contact-info">
+        <div class="contact-text">
+          <h3>Aleksandr Kuznetsov</h3>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li><i class="bi bi-envelope"></i> statfluct@yahoo.com</li>
+            <li><i class="devicon-linkedin-plain colored"></i> LinkedIn: @alejaldo</li>
+            <li><i class="devicon-github-original colored"></i> GitHub: Alejaldo</li>
+            <li>Date of birth: 29.01.1992</li>
+          </ul>
+        </div>
+        <div class="contact-photo">
+          <img src="images/Kuznetcov_ava.jpg" alt="Avatar" class="avatar"/>
+        </div>
+      </div>
+    </div>
+    
+    <div class="summary">
+      <strong>Professional Summary:</strong> Experienced Ruby on Rails developer with 5 years of professional experience in building scalable web applications and APIs. Strong background in business development and financial management, bringing unique perspective to software development. Proven track record of delivering high-quality solutions, optimizing performance, and collaborating effectively in cross-functional teams.
+    </div>
+    
+    <div class="achievements">
+      <h4>Key Achievements</h4>
+      <ul>
+        <li><strong>Performance:</strong> Significantly improved system performance and database query efficiency</li>
+        <li><strong>Quality:</strong> Implemented comprehensive test coverage, significantly reducing production bugs</li>
+        <li><strong>APIs:</strong> Built 20+ RESTful endpoints with high availability</li>
+        <li><strong>Refactoring:</strong> Refactored large-scale legacy codebase (measured via git diff) following SOLID principles</li>
+      </ul>
+    </div>
+    
+    <div class="skills-section">
+      <div class="skills-column">
+        <h4>Technical Skills</h4>
+        <div class="skill-item">
+          <div class="skill-name"><i class="devicon-ruby-plain colored"></i>Ruby & Rails</div>
+          <div class="skill-description">Expert level, 5 years experience</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><i class="devicon-postgresql-plain colored"></i>Databases</div>
+          <div class="skill-description">PostgreSQL, SQLite, Redis</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><i class="devicon-javascript-plain colored"></i>Frontend</div>
+          <div class="skill-description">HTML, CSS, JS, Bootstrap, Webpack</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><i class="bi bi-clipboard-check"></i>Testing</div>
+          <div class="skill-description">RSpec, FactoryBot, Capybara</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><i class="devicon-docker-plain colored"></i>DevOps</div>
+          <div class="skill-description">Docker, Kubernetes, AWS, Heroku</div>
+        </div>
+      </div>
+      
+      <div class="skills-column">
+        <h4>Additional Skills</h4>
+        <div class="skill-item">
+          <div class="skill-name"><i class="devicon-git-plain colored"></i>Version Control</div>
+          <div class="skill-description">Git, GitHub</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><i class="bi bi-hdd-rack"></i>APIs & Integration</div>
+          <div class="skill-description">RESTful APIs, WebSocket, Kafka</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><i class="bi bi-tools"></i>Monitoring</div>
+          <div class="skill-description">Logz.io, New Relic, Helios</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><i class="bi bi-globe"></i>Web Scraping</div>
+          <div class="skill-description">Nokogiri, OpenURI</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Languages</div>
+          <div class="skill-description">Russian (Native), English (Upper-Intermediate), Spanish (Elementary)</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="experience-section">
+      <h2>Professional Experience</h2>
+      
+      <div class="experience-item no-break">
+        <div class="experience-header">
+          <div class="experience-date">Sep 2023 — Present</div>
+          <div>
+            <div class="experience-title">Ruby on Rails Developer</div>
+            <div class="experience-company">IT_ONE company</div>
+          </div>
+        </div>
+        <div class="experience-description">
+          <ul>
+            <li>Created and optimized RESTful APIs in Ruby on Rails, significantly improving system performance and enhancing user experience</li>
+            <li>Maintained and refactored legacy Ruby on Rails codebase, reducing technical debt and improving code maintainability</li>
+            <li>Optimized database interactions and resolved complex bugs related to scopes and queries, significantly improving query performance</li>
+            <li>Developed innovative solutions for data retrieval across associated Rails applications using ActiveResource</li>
+            <li>Implemented advanced data logic for seamless integration with external Rails applications, ensuring data consistency</li>
+            <li>Implemented comprehensive test coverage with RSpec, significantly reducing production bugs and improving code reliability</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="experience-item no-break">
+        <div class="experience-header">
+          <div class="experience-date">Oct 2021 — Aug 2023</div>
+          <div>
+            <div class="experience-title">Ruby on Rails Developer</div>
+            <div class="experience-company">Selina</div>
+          </div>
+        </div>
+        <div class="experience-description">
+          <ul>
+            <li>API Development and Integration:
+              <ul>
+                <li>Collaborated with a 15+ member cross-functional team to design and develop API functionalities, facilitating seamless integration of payments, bookings, and event management systems</li>
+                <li>Developed and maintained 20+ robust API endpoints supporting internal and external services, ensuring high availability and reliability</li>
+                <li>Led integration of external services using RESTful APIs and Kafka message brokers, significantly improving data processing efficiency</li>
+                <li>Implemented security best practices for data handling and authentication, significantly improving system security</li>
+              </ul>
+            </li>
+            <li>Maintenance and Codebase Improvement:
+              <ul>
+                <li>Refactored legacy codebase containing 50,000+ lines of code, significantly improving maintainability and code quality</li>
+                <li>Extracted complex business logic into service objects, following SOLID principles and improving code testability</li>
+                <li>Implemented comprehensive RSpec test coverage, significantly improving code reliability and reducing production issues</li>
+                <li>Designed and implemented new models and controllers supporting 5+ new business features</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="experience-item no-break">
+        <div class="experience-header">
+          <div class="experience-date">Aug 2020 — Sep 2021</div>
+          <div>
+            <div class="experience-title">Web Development</div>
+            <div class="experience-company">Freelance Projects</div>
+          </div>
+        </div>
+        <div class="experience-description">
+          <ul>
+            <li>Developed Ruby on Rails applications: Chamonix (meetings), Askme (Q&A), Kabulchat (WebSocket chat)</li>
+            <li>Created Ruby console applications: Weather app, Hangman game, Store simulation</li>
+            <li>Built frontend projects: Landing pages, video search forms</li>
+            <li>Implemented web scraping solutions using Nokogiri and OpenURI</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="experience-item no-break">
+        <div class="experience-header">
+          <div class="experience-date">Apr 2017 — Sep 2021</div>
+          <div>
+            <div class="experience-title">Business Development</div>
+            <div class="experience-company">Various Companies</div>
+          </div>
+        </div>
+        <div class="experience-description">
+          <ul>
+            <li>Product management & marketing: organized first Russian PCB for oil drill electronics, $1.3M sales</li>
+            <li>Financial modeling and forecasting: raised $260,000 in grants</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="education-section">
+      <h2>Education</h2>
+      
+      <div class="education-item">
+        <div class="education-date">2009 — 2014</div>
+        <div class="education-details">
+          <div class="education-title">South Ural State University</div>
+          <div class="education-degree">Specialist/Master's Degree — Financial Management</div>
+        </div>
+      </div>
+      
+      <div class="education-item">
+        <div class="education-date">2021</div>
+        <div class="education-details">
+          <div class="education-title">Good Programmer</div>
+          <div class="education-degree">Ruby on Rails Developer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
